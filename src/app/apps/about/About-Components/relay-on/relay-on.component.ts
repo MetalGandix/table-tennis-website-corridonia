@@ -11,7 +11,7 @@ export class RelayOnComponent implements OnInit {
     {
       icon: 'sl-icon-envelope-open text-info-gradiant',
       field: 'Mandaci una mail',
-      fieldText: 'leomogia@hotmail.it'
+      fieldText: 'fabrizio.perticarari@virgilio.it'
     },
     {
       icon: 'sl-icon-call-end text-info-gradiant',

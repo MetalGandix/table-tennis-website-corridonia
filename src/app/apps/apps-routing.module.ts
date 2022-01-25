@@ -7,6 +7,7 @@ import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 
 
 import { FullComponent } from './layout/full/full.component';
+import { OrariComponent } from './orari/orari.component';
 
 
 const routes: Routes = [
@@ -14,9 +15,11 @@ const routes: Routes = [
     path: '',
     component: FullComponent,
     children: [
-      { path: '', component: BlogComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: 'home', component: BlogComponent },
       { path: 'blogDetail/:id', component: BlogDetailComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'orari', component: OrariComponent },
     ]
   }
 ];
