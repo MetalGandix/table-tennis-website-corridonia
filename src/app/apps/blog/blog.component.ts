@@ -23,7 +23,7 @@ export class BlogComponent implements OnInit {
   }
 
   public async getData() {
-    const response = await fetch('/assets/JSON/player.json');
+    const response = await fetch('./assets/JSON/player.json');
     const data = await response.json();
     this.relayOn = data;
   }
