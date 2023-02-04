@@ -1351,8 +1351,9 @@ Overlay headers and thrid dropdown
 common-innerpage-banner
 *******************/
 .banner-innerpage{
-    padding:150px 0 100px;
-    background-size:cover;
+    height: 40vh;
+    padding: 150px 0 100px;
+    background-size: cover;
     background-position: center center;
     .title{
         color:$white;

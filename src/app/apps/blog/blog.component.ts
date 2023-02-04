@@ -11,76 +11,24 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BlogComponent implements OnInit {
   blogsDetail: Blog[] = [];
+  public relayOn: any;
 
   constructor(
     public service: ServiceblogService,
     public router: Router,
     public http: HttpClient
   ) {
+    this.getData();
     this.service.showEdit = false;
   }
 
-  relayOn = [
-    {
-      image: 'assets/images/team/giuseppina.jpg',
-      icon: 'sl-icon-envelope-open text-info-gradiant',
-      name: 'Giuseppina Bistosini',
-      points: 'Punti in classifica: 1000',
-      division: 'D2'
-    },
-    {
-      image: 'assets/images/team/fabrizioperticarari.jpg',
-      icon: 'sl-icon-call-end text-info-gradiant',
-      name: 'Fabrizio Perticarari',
-      points: 'Punti in classifica: 1000',
-      division: 'D2'
-    },
-    {
-      image: 'assets/images/team/lucacampus.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Luca Campus',
-      points: 'Punti in classifica: 1000',
-      division: 'D1'
-    },
-    {
-      image: 'assets/images/team/samuele.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Samuele Travaglini',
-      points: 'Punti in classifica: 1000',
-      division: 'D1'
-    },
-    {
-      image: 'assets/images/team/fabriziogrimaldi.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Fabrizio el tigre Grimaldi',
-      points: 'Punti in classifica: 1000',
-      division: 'D1'
-    },
-    {
-      image: 'assets/images/team/giuseppegismondi.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Giuseppe Gismondi',
-      points: 'Punti in classifica: 1000',
-      division: 'D1'
-    },
-    {
-      image: 'assets/images/team/maryuricatozzi.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Maryuri Catozzi',
-      points: 'Punti in classifica: 1000',
-      division: 'D2'
-    },
-    {
-      image: 'assets/images/team/leonardomogianesi.jpg',
-      icon: 'sl-icon-map text-info-gradiant',
-      name: 'Leonardo Mogianesi',
-      points: 'Punti in classifica: 1000',
-      division: 'D2'
-    }
-  ];
+  public async getData() {
+    const response = await fetch('/assets/JSON/player.json');
+    const data = await response.json();
+    this.relayOn = data;
+  }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {    
   }
 
   print(){
