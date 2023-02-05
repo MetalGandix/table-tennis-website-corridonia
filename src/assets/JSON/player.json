@@ -42,6 +42,13 @@
         "division": "D1"
     },
     {
+        "image": "assets/images/team/dimitri.jpg",
+        "icon": "sl-icon-map text-info-gradiant",
+        "name": "Dimitri Pintucci",
+        "points": "Punti in classifica: 1000",
+        "division": "D2"
+    },
+    {
         "image": "assets/images/team/maryuricatozzi.jpg",
         "icon": "sl-icon-map text-info-gradiant",
         "name": "Maryuri Catozzi",
