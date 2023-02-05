@@ -47,21 +47,6 @@ Header 6
     }
 }
 
-@media(max-width:1023px) {
-    .h6-nav-bar{
-        .navbar-nav{
-            .nav-link{
-                padding: 15px 15px;
-            }
-        }
-        .act-buttons{
-            .btn{
-                margin: 10px 0 10px 0px;
-            }
-        }
-    }
-}
-
 
 /******************* 
 Main & Page wrapper
@@ -412,18 +397,6 @@ position
     }
 }
 
-@media (max-width: 991px) {
-    .hidden-md-down {
-        display: none !important;
-    }
-}
-
-@media (min-width: 992px) {
-    .hidden-lg-up {
-        display: none !important;
-    }
-}
-
 @media (max-width: 1199px) {
     .hidden-lg-down {
         display: none !important;
@@ -618,12 +591,6 @@ position
     }
 }
 
-@media (max-width: 992px) {
-    .banner {
-        height: auto !important;
-        padding: 100px 0;
-    }
-}
 
 @media (max-width: 767px) {
     .banner {
@@ -1366,14 +1333,7 @@ common-innerpage-banner
         color:$white;
     }
 }  
-@media(max-width:900px) {
-    .static-slider10{
-        .title{
-                font-size:40px;
-                line-height: 45px;
-            }
-    }
-}
+
 .with-noborder{
     .media{
         border:0px;

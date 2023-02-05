@@ -5,3 +5,19 @@
 a{
   font-size: larger;
 }
+
+#title-page{
+  margin-right: 100px
+}
+
+@media (max-width: 992px){
+#ul-id{
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title-page{
+  text-align: center;
+  margin-right: 0px;
+}
+}

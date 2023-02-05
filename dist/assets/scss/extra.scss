@@ -85,14 +85,6 @@ Static slide 10
     color: $white;
   }
 }
-@media (max-width: 900px) {
-  .static-slider10 {
-    .title {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  }
-}
 
 /*******************
 Static slide 3
@@ -191,21 +183,6 @@ form-banner 1
     }
     input[type="submit"] {
       padding: 0 20px;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .banner {
-    height: auto !important;
-    padding: 100px 0;
-  }
-  #banner1 {
-    background-position: right -6em center;
-    background-size: 80%;
-
-    h2 {
-      font-size: 30px;
     }
   }
 }

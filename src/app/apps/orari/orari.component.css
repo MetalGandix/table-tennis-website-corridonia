@@ -1,0 +1,10 @@
+textarea{
+    width: 600px;
+    height: 200px;
+}
+
+@media (max-width: 992px){
+    textarea{
+        width: 300px;
+    }
+  }
